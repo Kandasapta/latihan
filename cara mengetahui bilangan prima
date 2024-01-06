@@ -1,17 +1,22 @@
-include<iostream>
+Deret Bilangan Prima C++
+Dari teori mengenai bilangan prima yang sudah dijelaskan diatas, kini kita coba implementasi kedalam program C++. Program pertama yang kita buat adalah untuk mencetak deret bilangan prima dari range 1-100.
 
-using namesp#ace std;
+#include <iostream>
+using namespace std;
 
-int main()
-{
+int main(){
 	int bil;
-	cout<<"masukan bilangan: ";
-	cin>>bil;
-	
-	if (bil%1 == 0,bil%bil == 0){
-		cout<<bil<<"merupakan bilangan prima\n";
-	} else {
-		cout<<bil<<"bukan merupakan bilangan prima\n";
+	cout<<"Menampilkan Deret Bilangan Prima 1-100";
+	cout<<endl;
+
+	for(int i=1;i<=100;i++){
+		bil=0;
+		for(int j=1;j<=i;j++){
+			if(i%j==0){
+				bil=bil+1;
+			}
+		}
+		if (bil==2)
+		cout<<i<<" ";
 	}
-	return 0;
 }
